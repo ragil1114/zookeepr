@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const { animals } = require('./data/animals');
 
 
 app.listen(3001, () => {
