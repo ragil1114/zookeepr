@@ -3,7 +3,8 @@ const app = express();
 const { animals } = require('./data/animals');
 
 app.get('/api/animals', (req, res) => {
-    res.send('Hello!');
+    // change .json to .send here for small data
+    res.json(animals);
 });
 
 app.listen(3001, () => {
