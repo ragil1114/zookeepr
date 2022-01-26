@@ -48,7 +48,7 @@ app.get('/api/animals', (req, res) => {
         results = filterByQuery(req.query, results);
     }
     // change .json to .send here for small data
-    res.json(animals);
+    res.json(results);
 });
 
 app.listen(3001, () => {
