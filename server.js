@@ -3,6 +3,8 @@ const app = express();
 const { animals } = require('./data/animals');
 
 app.get('/api/animals', (req, res) => {
+    let results = animals;
+    console.log(req.query)
     // change .json to .send here for small data
     res.json(animals);
 });
