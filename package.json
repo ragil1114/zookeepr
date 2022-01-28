@@ -19,5 +19,7 @@
   "homepage": "https://github.com/ragil1114/zookeepr#readme",
   "dependencies": {
     "express": "^4.17.2"
-  }
+  },
+  "devDependencies": {},
+  "keywords": []
 }
