@@ -64,7 +64,7 @@ function createNewAnimal(body, animalsArray) {
 app.get('/api/animals', (req, res) => {
   let results = animals;
   if (req.query) {
-      results = filterByQuery(req.query, results);
+    results = filterByQuery(req.query, results);
   }
   // change .json to .send here for small data
   res.json(results);
