@@ -62,7 +62,6 @@ function createNewAnimal(body, animalsArray) {
     path.join(__dirname, './data/animals.json'),
     JSON.stringify({ animals: animalsArray }, null, 2)
   );
-
   return animal;
 }
 
