@@ -54,11 +54,10 @@ function findById(id, animalsArray) {
 }
 
 function createNewAnimal(body, animalsArray) {
-  console.log(body);
-  // our function's main code will go here!
+  const animal = body;
+  animalsArray.push(animal);
 
-  // return finished code to post route for response
-  return body;
+  return animal;
 }
 
 app.get('/api/animals', (req, res) => {
