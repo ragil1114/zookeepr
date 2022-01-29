@@ -62,12 +62,12 @@ function createNewAnimal(body, animalsArray) {
 }
 
 app.get('/api/animals', (req, res) => {
-    let results = animals;
-    if (req.query) {
-        results = filterByQuery(req.query, results);
-    }
-    // change .json to .send here for small data
-    res.json(results);
+  let results = animals;
+  if (req.query) {
+      results = filterByQuery(req.query, results);
+  }
+  // change .json to .send here for small data
+  res.json(results);
 });
 
 app.get('/api/animals/:id', (req, res) => {
@@ -86,5 +86,5 @@ app.post('/api/animals', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`API server now on port ${PORT}!`);
+  console.log(`API server now on port ${PORT}!`);
 });
