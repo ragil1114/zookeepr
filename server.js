@@ -117,11 +117,12 @@ app.post('/api/animals', (req, res) => {
   }
 });
 
-// Route used to create a homepage for a server. Respond with index.html
+// Route used to create a homepage for a server. Server responds with index.html
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
+// Route to handle animals.html 
 app.get('/animals', (req, res) => {
   res.sendFile(path.join(__dirname, './public/animals.html'));
 });
