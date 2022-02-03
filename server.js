@@ -122,9 +122,14 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
-// Route to handle animals.html 
+// Route to display animals.html 
 app.get('/animals', (req, res) => {
   res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+
+// Route to display zookeepers.html
+app.get('/zookeepers', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/zookeepers.html'));
 });
 
 app.listen(PORT, () => {
