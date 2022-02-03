@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
 
+// Indicates to server that any time a client navigates to <ourhost>/api, the app will use the router we set up in apiRoutes.
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
