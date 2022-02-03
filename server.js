@@ -12,11 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
 
-function findById(id, animalsArray) {
-  const result = animalsArray.filter(animal => animal.id === id)[0];
-  return result;
-}
-
 function createNewAnimal(body, animalsArray) {
   const animal = body;
   animalsArray.push(animal);
